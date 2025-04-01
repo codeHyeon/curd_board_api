@@ -13,7 +13,7 @@
 ─ service    : 비즈니스 로직을 담당하는 서비스 계층  
 ─ exception  : 예외 처리 관련 클래스  
 
-
+<br/>
     
 ## 기능 구현
 
@@ -40,6 +40,7 @@
 게시글을 삭제하는 API입니다. 요청 ID로 게시글을 삭제하며, 게시글이 존재하지 않을 경우 예외가 발생합니다.
 - **Response**: 204 No Content (삭제 완료 시)
 
+<br/>
 
 ## 사용된 기술 스택
 
@@ -50,7 +51,7 @@
 - **Lombok**: Getter, Setter 등의 코드를 자동으로 생성
 - **Validation API (Jakarta Validation)**: 입력 데이터에 대한 유효성 검사
 
-
+<br/>
 
 ## 예외 처리
 
@@ -81,7 +82,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
-
+<br/>
 
 ## 학습한 기술
 
