@@ -6,15 +6,17 @@
 
 ## 프로젝트 구조
 
-─ controller      # API 요청을 처리하는 컨트롤러  
-─ dto             # 요청/응답에 사용할 DTO  
-─ entity          # 데이터베이스와 매핑되는 엔티티  
-─ repository      # JPA를 사용한 데이터 접근 계층 (CRUD 처리)  
-─ service         # 비즈니스 로직을 담당하는 서비스 계층  
-─ exception       # 예외 처리 관련 클래스  
+─ controller : API 요청을 처리하는 컨트롤러  
+─ dto        : 요청/응답에 사용할 DTO  
+─ entity     : 데이터베이스와 매핑되는 엔티티  
+─ repository : JPA를 사용한 데이터 접근 계층 (CRUD 처리)  
+─ service    : 비즈니스 로직을 담당하는 서비스 계층  
+─ exception  : 예외 처리 관련 클래스  
+
 
    
 ## 기능 구현
+
 
 ### 1. 게시글 작성 (POST `/boards`)
 게시글을 작성하는 API입니다. 클라이언트로부터 제목과 내용을 받아 게시글을 생성합니다.
@@ -38,6 +40,7 @@
 게시글을 삭제하는 API입니다. 요청 ID로 게시글을 삭제하며, 게시글이 존재하지 않을 경우 예외가 발생합니다.
 - **Response**: 204 No Content (삭제 완료 시)
 
+
 ## 사용된 기술 스택
 
 - **Spring Boot**: Java 기반의 프레임워크로 RESTful API를 구축
@@ -46,6 +49,8 @@
 - **Hibernate**: JPA 구현체로 데이터베이스 연동
 - **Lombok**: Getter, Setter 등의 코드를 자동으로 생성
 - **Validation API (Jakarta Validation)**: 입력 데이터에 대한 유효성 검사
+
+
 
 ## 예외 처리
 
@@ -75,6 +80,8 @@ public class GlobalExceptionHandler {
     }
 }
 ```
+
+
 
 ## 학습한 기술
 
