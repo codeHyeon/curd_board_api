@@ -2,15 +2,18 @@
 
 이 프로젝트는 **Spring Boot**를 이용하여 구현한 **게시판 API**입니다. 이 프로젝트는 **게시글 CRUD** (Create, Read, Update, Delete) 기능의 학습을 위해 제작되었습니다. API 요청은 **RESTful** 형식으로 이루어지며, 요청에 대한 응답은 JSON 형식으로 반환됩니다.
 
+   
+
 ## 프로젝트 구조
 
-─ controller      # API 요청을 처리하는 컨트롤러
-─ dto             # 요청/응답에 사용할 DTO
-─ entity          # 데이터베이스와 매핑되는 엔티티
-─ repository      # JPA를 사용한 데이터 접근 계층 (CRUD 처리)
-─ service         # 비즈니스 로직을 담당하는 서비스 계층
-─ exception       # 예외 처리 관련 클래스
+─ controller      # API 요청을 처리하는 컨트롤러  
+─ dto             # 요청/응답에 사용할 DTO  
+─ entity          # 데이터베이스와 매핑되는 엔티티  
+─ repository      # JPA를 사용한 데이터 접근 계층 (CRUD 처리)  
+─ service         # 비즈니스 로직을 담당하는 서비스 계층  
+─ exception       # 예외 처리 관련 클래스  
 
+   
 ## 기능 구현
 
 ### 1. 게시글 작성 (POST `/boards`)
