@@ -2,7 +2,7 @@
 
 이 프로젝트는 **Spring Boot**를 이용하여 구현한 **게시판 API**입니다. 이 프로젝트는 **게시글 CRUD** (Create, Read, Update, Delete) 기능의 학습을 위해 제작되었습니다. API 요청은 **RESTful** 형식으로 이루어지며, 요청에 대한 응답은 JSON 형식으로 반환됩니다.
 
-   
+<br/>
    
 ## 프로젝트 구조
 
