@@ -39,7 +39,7 @@ public class BoardService {
     // 특정 게시글 조회 (ID로)
     public BoardResponseDto getBoardById(Long id) {
         Board board = boardRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 존재하지 않습니다. ID : " + id));
+                .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 존재하지 않습니다. (ID : " + id + ")"));
         return new BoardResponseDto(board);
     }
 
@@ -47,7 +47,7 @@ public class BoardService {
     @Transactional
     public BoardResponseDto updateBoard(Long id, BoardRequestDto boardRequestDto) {
         Board board = boardRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 존재하지 않습니다. ID : " + id));
+                .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 존재하지 않습니다. (ID : " + id + ")"));
         // board.setTitle(boardRequestDto.getTitle());
         // board.setContent(boardRequestDto.getContent());
         board.update(boardRequestDto);
@@ -58,7 +58,7 @@ public class BoardService {
     @Transactional
     public void deleteBoard(Long id) {
         if (!boardRepository.existsById(id)) {
-            throw new IllegalArgumentException("해당 게시글이 존재하지 않습니다. ID: " + id);
+            throw new IllegalArgumentException("해당 게시글이 존재하지 않습니다. (ID: " + id +")");
         }
         boardRepository.deleteById(id);
     }
